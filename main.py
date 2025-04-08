@@ -28,10 +28,11 @@ def FilesDL(urls):
     for i in urls:
         response = requests.get(indexofurl+i)
         if response.status_code == 200 :
-            print(f"Downloaded file : {i}")
+            i = i.replace("%20", " ")
             with open(f"./pdfs2/{i}", "wb") as f:
                 for chunk in response.iter_content(chunk_size=8192):
                     f.write(chunk)
+            print(f'Downloaded File : {i}')
         else:
             print(f"Cannot download file : {i}")
         
