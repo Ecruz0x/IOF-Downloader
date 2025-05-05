@@ -14,5 +14,9 @@ cd ./IOF-Downloader
 python3 ./main.py  
 ```
 **Prompt**:             -->   **Argument**  
-"EnterIOF URL :"        -->  Enter the indexof URL where you want to download files from.  
-"Enter SaveDIR :"       -->  Destination directory.  
+``` sh
+"EnterIOF URL :"        -->  Enter the indexof URL where you want to download files from.
+```
+``` sh
+"Enter SaveDIR :"       -->  Destination directory.
+```
